@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookStore | Books</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">BookStore</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Books Listing -->
+  <section class="books">
+    <h2 style="text-align:center;margin-bottom:40px;">All Books</h2>
+    <div class="book-grid">
+      <!-- Book items -->
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=400&q=80" alt="Atomic Habits">
+        <div class="book-details">
+          <h4>Atomic Habits</h4>
+          <p>James Clear</p>
+          <span>$15.99</span>
+          <button class="btn add-to-cart" data-id="b1" data-title="Atomic Habits" data-price="15.99" data-image="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=400&q=80" alt="Educated">
+        <div class="book-details">
+          <h4>Educated</h4>
+          <p>Tara Westover</p>
+          <span>$12.49</span>
+          <button class="btn add-to-cart" data-id="b2" data-title="Educated" data-price="12.49" data-image="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1544716278-fbf86b8945c5?auto=format&fit=crop&w=400&q=80" alt="The Silent Patient">
+        <div class="book-details">
+          <h4>The Silent Patient</h4>
+          <p>Alex Michaelides</p>
+          <span>$14.29</span>
+          <button class="btn add-to-cart" data-id="b3" data-title="The Silent Patient" data-price="14.29" data-image="https://images.unsplash.com/photo-1544716278-fbf86b8945c5?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Where the Crawdads Sing">
+        <div class="book-details">
+          <h4>Where the Crawdads Sing</h4>
+          <p>Delia Owens</p>
+          <span>$13.59</span>
+          <button class="btn add-to-cart" data-id="b4" data-title="Where the Crawdads Sing" data-price="13.59" data-image="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=400&q=80" alt="Sapiens">
+        <div class="book-details">
+          <h4>Sapiens</h4>
+          <p>Yuval Noah Harari</p>
+          <span>$16.99</span>
+          <button class="btn add-to-cart" data-id="b5" data-title="Sapiens" data-price="16.99" data-image="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80" alt="1984">
+        <div class="book-details">
+          <h4>1984</h4>
+          <p>George Orwell</p>
+          <span>$11.99</span>
+          <button class="btn add-to-cart" data-id="b6" data-title="1984" data-price="11.99" data-image="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=400&q=80" alt="Becoming">
+        <div class="book-details">
+          <h4>Becoming</h4>
+          <p>Michelle Obama</p>
+          <span>$17.49</span>
+          <button class="btn add-to-cart" data-id="b7" data-title="Becoming" data-price="17.49" data-image="https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=400&q=80" alt="The Alchemist">
+        <div class="book-details">
+          <h4>The Alchemist</h4>
+          <p>Paulo Coelho</p>
+          <span>$9.99</span>
+          <button class="btn add-to-cart" data-id="b8" data-title="The Alchemist" data-price="9.99" data-image="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=400&q=80" alt="The Hobbit">
+        <div class="book-details">
+          <h4>The Hobbit</h4>
+          <p>J.R.R. Tolkien</p>
+          <span>$10.49</span>
+          <button class="btn add-to-cart" data-id="b9" data-title="The Hobbit" data-price="10.49" data-image="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=400&q=80" alt="The Midnight Library">
+        <div class="book-details">
+          <h4>The Midnight Library</h4>
+          <p>Matt Haig</p>
+          <span>$14.49</span>
+          <button class="btn add-to-cart" data-id="b10" data-title="The Midnight Library" data-price="14.49" data-image="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=400&q=80">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 BookStore. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
