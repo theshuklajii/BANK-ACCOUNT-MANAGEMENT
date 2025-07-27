@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Your Digital Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>BookHaven</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="books.html" class="nav-link">Books</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="cart.html" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </nav>
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Great Read</h1>
+                <p>Explore thousands of books from bestselling authors and discover new favorites in our carefully curated collection.</p>
+                <a href="books.html" class="btn btn-primary">Browse Books</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Fiction</h3>
+                    <p>Immerse yourself in captivating stories</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Science</h3>
+                    <p>Explore the wonders of scientific discovery</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Kids</h3>
+                    <p>Delightful books for young readers</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Romance</h3>
+                    <p>Fall in love with beautiful love stories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="books-grid" id="featuredBooksGrid">
+                <!-- Books will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose BookHaven?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your books delivered quickly to your doorstep</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Checkout</h3>
+                    <p>Your payment information is always safe with us</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Huge Collection</h3>
+                    <p>Thousands of books across all genres and categories</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer service team is always here to help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter and get the latest book recommendations and exclusive offers.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required id="newsletterEmail">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>BookHaven</span>
+                    </div>
+                    <p>Your trusted partner in finding the perfect book for every occasion.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Fiction</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Romance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@bookhaven.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
