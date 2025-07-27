@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookStore | Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">BookStore</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cart">
+    <h2 style="text-align:center;margin-bottom:40px;">Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total" id="cart-total"></div>
+    <button id="clear-cart" class="btn clear-cart" style="display:block;margin-left:auto;">Clear Cart</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 BookStore. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
